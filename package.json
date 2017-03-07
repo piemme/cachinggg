@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "Module per persistent cache control, key/value store only for one key",
   "main": "cachinggg.js",
-  "private": "true",
   "author": "Paolo Manca",
   "scripts": {
     "test": "tape test.js | faucet",
