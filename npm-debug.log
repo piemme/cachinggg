@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/paolo/.nvm/versions/node/v6.0.0/bin/node',
+1 verbose cli   '/home/paolo/.nvm/versions/node/v6.0.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v6.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/paolo/progetti/limitazioni-traffico-comune-torino/cachinggg',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/paolo/.npm/@piemme/cachinggg/0.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /home/paolo/.npm correctMkdir not in flight; initializing
+10 info lifecycle @piemme/cachinggg@0.0.2~prepublish: @piemme/cachinggg@0.0.2
+11 silly lifecycle @piemme/cachinggg@0.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/paolo/.npm/@piemme/cachinggg/0.0.2/package.tgz',
+12 verbose tar pack   '/home/paolo/progetti/limitazioni-traffico-comune-torino/cachinggg' ]
+13 verbose tarball /home/paolo/.npm/@piemme/cachinggg/0.0.2/package.tgz
+14 verbose folder /home/paolo/progetti/limitazioni-traffico-comune-torino/cachinggg
+15 verbose addLocalTarball adding from inside cache /home/paolo/.npm/@piemme/cachinggg/0.0.2/package.tgz
+16 verbose correctMkdir /home/paolo/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @piemme/cachinggg@0.0.2
+18 verbose afterAdd /home/paolo/.npm/@piemme/cachinggg/0.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /home/paolo/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/paolo/.npm/@piemme/cachinggg/0.0.2/package/package.json written
+21 silly publish { name: '@piemme/cachinggg',
+21 silly publish   version: '0.0.2',
+21 silly publish   description: 'Module per persistent cache control, key/value store only for one key',
+21 silly publish   main: 'cachinggg.js',
+21 silly publish   private: 'true',
+21 silly publish   author: { name: 'Paolo Manca' },
+21 silly publish   scripts:
+21 silly publish    { test: 'tape test.js | faucet',
+21 silly publish      lint: 'standard',
+21 silly publish      sanity: 'npm test && npm run lint',
+21 silly publish      try: 'node try.js',
+21 silly publish      profile: 'node --prof',
+21 silly publish      postprofile: 'node --prof-process isolate-0x*-v8.log > processed.log',
+21 silly publish      preprofile: 'rm -f processed.txt && rm -f isolate-0x*-v8.log' },
+21 silly publish   engines: { node: '6.0.0' },
+21 silly publish   keywords: [ 'caching', 'key/value store' ],
+21 silly publish   precommit: [ 'lint', 'test' ],
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { crypto: '0.0.3', debug: '^2.6.1', 'node-persist': '^2.0.8' },
+21 silly publish   devDependencies:
+21 silly publish    { faucet: '0.0.1',
+21 silly publish      tape: '^4.0.1',
+21 silly publish      'tap-spec': '^4.0.2',
+21 silly publish      'tape-catch': '^1.0.4',
+21 silly publish      'pre-commit': '^1.0.10',
+21 silly publish      standard: '^4.3.3' },
+21 silly publish   readme: '# Cachinggg\n\nModule for simple key/value store, with just one key. It\'a wrapper around node-persist, in sync mode.\n\n## Install\n\n```\nnpm install @piemme/cachinggg --save\n```\n\n<a name="api"></a>\n## API\n\n  * <a href="#put"><code><b>put()</b></code></a>\n  * <a href="#get"><code><b>get()</b></code></a>\n  * <a href="#refresh"><code><b>refresh()</b></code></a>\n  * <a href="#clear"><code><b>clear()</b></code></a>\n  * <a href="#disable"><code><b>disable</b></code></a>\n\n-------------------------------------------------------\n\n<a name="put"></a>\n### put(someStuff)\n\n<a name="get"></a>\n### get()\n\n<a name="refresh"></a>\n### refresh(someStuff)\n\n<a name="clear"></a>\n### answer(clear)\n\n<a name="disable"></a>\n### disable\n\nExample:\n\n```js\nvar cachinggg = require (\'cachinggg\')\ncachinggg.put(\'beep\')\nvar content = cachinggg.get()\n# obtain \'beep\'\n\n# and now refresh cache with a new content\n# cache system verify if value is the same in cache\ncachinggg.refresh(someContent, function () {\n  var content = cachinggg.get()\n})\n```\n\n## License\n\nMIT\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'f04cd915367ab9e3caa7a117b6365adeb4ebe4c7',
+21 silly publish   _id: '@piemme/cachinggg@0.0.2',
+21 silly publish   _shasum: '365c056792ed07f243a28c3bfde2cdc32905dc0a',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 verbose stack Error: This package has been marked as private
+23 verbose stack Remove the 'private' field from the package.json to publish it.
+23 verbose stack     at publish_ (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/lib/publish.js:100:15)
+23 verbose stack     at Array.<anonymous> (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+23 verbose stack     at LOOP (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+23 verbose stack     at LOOP (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+23 verbose stack     at chain (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+23 verbose stack     at /home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/lib/publish.js:72:5
+23 verbose stack     at RES (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+23 verbose stack     at f (/home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+23 verbose stack     at /home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/lib/cache.js:362:16
+23 verbose stack     at /home/paolo/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/write-file-atomic/index.js:29:9
+24 verbose cwd /home/paolo/progetti/limitazioni-traffico-comune-torino/cachinggg
+25 error Linux 3.13.0-111-generic
+26 error argv "/home/paolo/.nvm/versions/node/v6.0.0/bin/node" "/home/paolo/.nvm/versions/node/v6.0.0/bin/npm" "publish"
+27 error node v6.0.0
+28 error npm  v3.8.6
+29 error This package has been marked as private
+29 error Remove the 'private' field from the package.json to publish it.
+30 error If you need help, you may report this error at:
+30 error     <https://github.com/npm/npm/issues>
+31 verbose exit [ 1, true ]

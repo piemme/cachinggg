@@ -20,19 +20,19 @@ npm install @piemme/cachinggg --save
 -------------------------------------------------------
 
 <a name="put"></a>
-### put(someStuff)
+put(someStuff)
 
 <a name="get"></a>
-### get()
+get()
 
 <a name="refresh"></a>
-### refresh(someStuff)
+refresh(someStuff)
 
 <a name="clear"></a>
-### answer(clear)
+answer(clear)
 
 <a name="disable"></a>
-### disable
+disable
 
 Example:
 
@@ -40,10 +40,10 @@ Example:
 var cachinggg = require ('cachinggg')
 cachinggg.put('beep')
 var content = cachinggg.get()
-# obtain 'beep'
+// obtain 'beep'
 
-# and now refresh cache with a new content
-# cache system verify if value is the same in cache
+// and now refresh cache with a new content
+// cache system verify if value is the same in cache
 cachinggg.refresh(someContent, function () {
   var content = cachinggg.get()
 })
