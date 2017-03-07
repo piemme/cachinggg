@@ -1,0 +1,42 @@
+{
+  "name": "cachinggg",
+  "version": "0.0.1",
+  "description": "Module per persistent cache control, key/value store only for one key",
+  "main": "cachinggg.js",
+  "private": "true",
+  "author": "Paolo Manca",
+  "scripts": {
+    "test": "tape test.js | faucet",
+    "lint": "standard",
+    "sanity": "npm test && npm run lint",
+    "try": "node try.js",
+    "profile": "node --prof",
+    "postprofile": "node --prof-process isolate-0x*-v8.log > processed.log",
+    "preprofile": "rm -f processed.txt && rm -f isolate-0x*-v8.log"
+  },
+    "engines": {
+    "node": "6.0.0"
+  },
+  "keywords": [
+    "caching",
+    "key/value store"
+  ],
+  "precommit": [
+    "lint",
+    "test"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "debug": "^2.6.1",
+    "node-persist": "^2.0.8"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.0.1",
+    "tap-spec": "^4.0.2",
+    "tape-catch": "^1.0.4",
+    "pre-commit": "^1.0.10",
+    "standard": "^4.3.3"
+  }
+}
